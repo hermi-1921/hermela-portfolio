@@ -5,7 +5,9 @@ font-family: 'poppins',sans-serif;
 box-sizing: border-box
 }
 body {
-background: #080808;;
+background-color: #0a111f;
+background-image: radial-gradient(#4a5568 1px, transparent 1px );
+background-size: 30px 30px;
 color:#fff;
 }
 
@@ -124,27 +126,56 @@ flex-wrap:wrap;
  h2:hover{
     border-bottom:2px solid #ff004f;
  }
- #skills ul{
-    list-style: none;
-    font-size: 18px;
-    color: #d0d0d0;
  
- }
- .content{
-    display:none;
-   
- }
- 
- .content.show{
-    display: block;
-   
- }
-#skills.show{
-    display: block;
+----------------updated skill--------------
+#skill{
+    width:50%;
+    background: #161b22;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.skills{
+    margin-bottom: 15px;
+}
+.skills p{
+    margin:5px 0;
+}
+.progress {
+    Width:100%;
+    background: #333;
+    border-radius: 10px;
+    overflow:hidden;
+    position:relative;
+}
+.progress-bar{
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    font-size:14px;
+    font-weight: bold;
+    color:white;
+    border-radius: 10px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    width:0;
+  transition: width 1.5s ease-in-out;
+  
+}
+.content{
+   display:none;
+  
+}
+
+.content.show{
+   display: block;
+  
+}
+#skill.show{
+   display: block;
 }
 div span{
-    color:#ff004f
-}
+   color:#ff004f;
+} 
 /*-----------------------services--------*/
 #services{
     padding: 30px 0;
@@ -289,31 +320,39 @@ transform: translateY(-10px);
     display: none;
   }
  /*----------CSS for small screens------------*/
- 
 
-@media only screen and (max-width: 600px) {
+
+ @media only screen and (max-width: 720px) {
     .Image-right{
-        float:center;
-        margin-left: 20px;
-        margin-top: 50px;
-        margin-bottom: 10px;
-        margin-right: 50px;
-        height:70vh;
+        display: block;
+        margin:0 auto;
+        max-width: 50%;
+        height: auto;
         border-radius: 50%;
     }
-
     .header-text {
-        margin-top:50%; 
-        font-size: 16px; 
-        text-align: center; 
+       
+       
+        text-align: center;
+        padding: 10px;
+        line-height: 1.6;
     }
 
     .header-text h1 {
         font-size: 30px; 
     }
+    .fa-solid.fa-bars{
+        position: absolute;
+        left:0;
+        top:10px;
+        padding: 0;
+        margin: 0;
+    }
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        padding-left: 0px;
+        margin-left: 5px;
       }
       nav ul{
         background: #ff004f;
